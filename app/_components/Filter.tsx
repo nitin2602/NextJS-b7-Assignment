@@ -4,10 +4,13 @@ import React, { useState } from "react";
 import FilterDropDown from "./FilterDropDown";
 
 function Filter() {
+  // State to control the visibility of the dropdown menu
   const [isOpen, setIsOpen] = useState(false);
 
+  // Function to toggle the dropdown menu
   const toggleDropdown = () => setIsOpen(!isOpen);
 
+  // List of manufacturers with their names and checked state
   const manufacturers = [
     { name: "ADREXpharma", checked: false },
     { name: "Aurora", checked: false },
@@ -15,9 +18,16 @@ function Filter() {
     { name: "Bedrocan", checked: true },
     { name: "Cannamedical", checked: true },
   ];
+
+  // State to manage the price range with minimum and maximum values
   const [price, setPrice] = useState([5, 10]);
+
+  // State to manage the THC range with minimum and maximum values
   const [thc, setTHC] = useState([11, 18]);
+
+  // State to manage the CBD range with minimum and maximum values
   const [cbd, setCBD] = useState([1, 5]);
+
   return (
     <>
       <div className="mt-10 w-64 bg-white hidden md:gap-7 md:flex flex-col ">

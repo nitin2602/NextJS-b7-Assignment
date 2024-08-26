@@ -6,25 +6,25 @@ import ReactPaginate from "react-paginate";
 import { ArrowLeft, ArrowRight, MoveRight } from "lucide-react";
 
 function Products() {
-    const itemsPerPage = 9;
-    const totalItems = 30; // Total number of items (can be dynamic)
+  const itemsPerPage = 9; // Number of items to display per page
+  const totalItems = 30; // Total number of items (can be dynamic)
   
-    // State for current page (0-based index for react-paginate)
-    const [currentPage, setCurrentPage] = useState<number>(0);
+  // State to keep track of the current page (0-based index for react-paginate)
+  const [currentPage, setCurrentPage] = useState<number>(0);
   
-    // Example data
-    const products = Array.from({ length: totalItems }, (_, index) => ({
-      id: index,
-    }));
+  // Example data generation: Creates an array of products with a unique ID for each item
+  const products = Array.from({ length: totalItems }, (_, index) => ({
+    id: index,
+  }));
   
-    // Pagination logic
-    const startIndex = currentPage * itemsPerPage;
-    const currentProducts = products.slice(startIndex, startIndex + itemsPerPage);
+  // Pagination logic
+  const startIndex = currentPage * itemsPerPage; // Calculate the starting index for the current page
+  const currentProducts = products.slice(startIndex, startIndex + itemsPerPage); // Slice the products array to get items for the current page
   
-    // Handle page changes
-    const handlePageClick = (event: { selected: number }) => {
-      setCurrentPage(event.selected);
-    };
+  // Handle page changes when the user clicks on a pagination button
+  const handlePageClick = (event: { selected: number }) => {
+    setCurrentPage(event.selected); // Update the current page state based on the selected page
+  };
   
 
   return (

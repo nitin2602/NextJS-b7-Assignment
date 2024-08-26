@@ -11,12 +11,16 @@ function Navbar() {
     "FAQs", // Frequently Asked Questions
     "Kontakt", // Contact
   ];
+  // State to keep track of the selected menu item
   const [selectedIndex, setSelectedIndex] = useState(null);
 
+  // State to control the dropdown menu visibility
   const [isOpen, setIsOpen] = useState(false);
 
+  // Function to toggle the dropdown menu
   const toggleDropdown = () => setIsOpen(!isOpen);
 
+  // Function to handle item clicks
   const handleItemClick = (index: any) => {
     setSelectedIndex(index);
   };
@@ -55,9 +59,8 @@ function Navbar() {
         <div className="  hidden md:flex  justify-between items-center gap-1">
           <ul className=" flex gap-[30px]">
             {menuItems.map((item, index) => (
-              <div className=" flex gap-[3px] items-center ">
+              <div key={index} className=" flex gap-[3px] items-center ">
                 <div
-                  key={index}
                   className={`${
                     selectedIndex === index ? "bg-[#28E3E9]" : "bg-[#62C3C64D]"
                   } rounded-tl-2xl rounded-br-2xl w-[10px] h-4`}
