@@ -53,9 +53,10 @@ function Filter() {
               className=" accent-[#62C3C6] w-full h-2 bg-[#62C3C6] rounded-lg appearance-none"
             />
           </div>
-          <div className="flex justify-between text-sm mt-2">
-            <span>{price[0]} €</span>
-            <span>{price[1]} €</span>
+          <div className="flex justify-between text-sm mt-3">
+            <span className=" w-full bg-[#8191911A] text-[#365758]  py-[2px] px-[10px] rounded-2xl ">{price[0]} €</span>
+             -
+             <span className="w-full bg-[#8191911A] text-[#365758]  py-[2px] px-[10px] rounded-2xl ">{price[1]} €</span>
           </div>
         </div>
 
@@ -99,9 +100,10 @@ function Filter() {
               className=" accent-[#62C3C6] w-full h-2 bg-[#62C3C6] rounded-lg appearance-none"
             />
           </div>
-          <div className="flex justify-between text-sm mt-2">
-            <span>{thc[0]} %</span>
-            <span>{thc[1]} %</span>
+          <div className="flex justify-between text-sm mt-3">
+            <span className=" w-full bg-[#8191911A] text-[#365758]  py-[2px] px-[10px] rounded-2xl ">{thc[0]} %</span>
+            -
+            <span className=" w-full bg-[#8191911A] text-[#365758]  py-[2px] px-[10px] rounded-2xl ">{thc[1]} %</span>
           </div>
         </div>
 
@@ -120,9 +122,10 @@ function Filter() {
               className="accent-[#62C3C6] w-full h-2 bg-[#62C3C6] rounded-lg appearance-none"
             />
           </div>
-          <div className="flex justify-between text-sm mt-2">
-            <span className=" bg -[#8191911A] rounded-sm">{cbd[0]} %</span>
-            <span>{cbd[1]} %</span>
+          <div className="flex justify-between text-sm mt-3">
+            <span className=" w-full bg-[#8191911A] text-[#365758]  py-[2px] px-[10px] rounded-2xl ">{cbd[0]} %</span>
+            -
+            <span className=" w-full bg-[#8191911A] text-[#365758]  py-[2px] px-[10px] rounded-2xl ">{cbd[1]} %</span>
           </div>
         </div>
 

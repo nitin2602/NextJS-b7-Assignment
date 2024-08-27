@@ -25,7 +25,7 @@ function Navbar() {
     setSelectedIndex(index);
   };
   return (
-    <div className=" flex justify-between items-center gap-7">
+    <div className=" flex justify-between md:mt-16 items-center gap-7">
       <div className="relative ">
         <input
           type="text"

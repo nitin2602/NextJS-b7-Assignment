@@ -15,10 +15,10 @@ function Topbar() {
     type="text"
     id="Search"
     placeholder="Suchen"
-    className="border-0 w-full md:w-80 border-none placeholder-[#62C3C6] rounded-[30px] text-[#62C3C6] bg-[#EEF7F7] font-normal text-lg py-2 pr-12 pl-4"
+    className="border-0 w-full md:w-80 border-none placeholder-[#62C3C6] rounded-[30px] text-[#62C3C6] bg-[#EEF7F7] font-normal text-lg py-[6px] pr-2 pl-4"
   />
-  <span className="absolute inset-y-0 right-10 flex items-center pr-4">
-    <button type="button" className="text-[#62C3C6]">
+  <span className="absolute inset-y-0 right-0 flex items-center pr-4">
+    <button type="button" className="text-[#28E3E9]">
       <span className="sr-only">Search</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
