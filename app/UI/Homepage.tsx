@@ -8,7 +8,7 @@ import Footer from "./../_components/Footer";
 function Homepage() {
   return (
     <>
-        <div className=" flex-col justify-center items-center mt-8 mx-5 md:mt-[70px] md:mx-[310px] ">
+        <div className=" flex-col justify-center items-center mt-8 mx-5 md:mt-[70px] md:mx-20 ">
           <Navbar />
           <Header />
           <Topbar />
